@@ -15,7 +15,7 @@ const Hamburger = () => {
           right: " 0%",
           padding: "1rem",
           width: "7rem",
-          top: "9%",
+          top: "10%",
           display: "flex",
           flexDirection: "column",
           gap: "1rem",
