@@ -1,17 +1,17 @@
 import React from "react";
 import Box from "@mui/material/Box";
+import { IconButton } from "@mui/material";
 
 const Footer = () => {
   return (
     <Box
       sx={{
         display: "flex",
-        justifyContent: "space-around",
+        flexDirection: "row",
+        justifyContent: "space-between",
         alignItems: "center",
-        width: "100%",
         backgroundColor: "#e3f2fd",
-        padding: "0.5rem",
-        
+        padding: "0.5rem 1rem",
       }}
       component="footer"
     >
@@ -22,8 +22,8 @@ const Footer = () => {
           alignItems: "center",
         }}
       >
-        <p>Powered by</p>
-        <img src="./images/DH.png" alt="DH-logo" style={{ height: "2rem" }} />
+        <p>Powered by Monica Munoz 2022</p>
+        {/* <img src="./images/DH.png" alt="DH-logo" style={{ height: "2rem" }} /> */}
       </div>
       <div
         style={{
@@ -32,12 +32,25 @@ const Footer = () => {
           gap: "1rem",
           width: "2rem",
           height: "2rem",
+          paddingRight: '11rem'
         }}
       >
-        <img src="/images/ico-facebook.png" alt="iconoFacebook" />
-        <img src="/images/ico-instagram.png" alt="iconoInstagram" />
-        <img src="/images/ico-tiktok.png" alt="iconoTiktok" />
-        <img src="/images/ico-whatsapp.png" alt="iconoWhatsapp" />
+        <IconButton>
+          <img src="/images/ico-facebook.png" alt="iconoFacebook" style={{ width: "1.5rem",
+          height: "1.5rem",}}/>
+        </IconButton>
+        <IconButton>
+          <img src="/images/ico-instagram.png" alt="iconoInstagram" style={{ width: "1.5rem",
+          height: "1.5rem",}} />
+        </IconButton>
+        <IconButton>
+          <img src="/images/ico-tiktok.png" alt="iconoTiktok" style={{width: "1.5rem",
+          height: "1.5rem"}}/>
+        </IconButton>
+        <IconButton>
+          <img src="/images/ico-whatsapp.png" alt="iconoWhatsapp" style={{ width: "1.5rem",
+          height: "1.5rem"}}/>
+        </IconButton>
       </div>
     </Box>
   );

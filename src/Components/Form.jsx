@@ -65,7 +65,7 @@ const Form = () => {
             helperText={errors.email}
           />
         </Grid>
-        <Button type="submit" variant="contained" size="large">
+        <Button type="submit" variant="contained" size="large" style={{margin:' 2rem'}}>
           Enviar
         </Button>
       </Grid>

@@ -12,10 +12,10 @@ const Favs = () => {
   const { state } = useContext(ContextGlobal);
 
   return (
-    <div style={{backgroundColor:`${state.bgColor}`}}>
+    <div style={{backgroundColor:`${state.bgColor}`, padding:'2rem'}}>
       <h1>Dentists Favs</h1>
       {
-        <div className="card-grid">
+        <div className="card-grid" style={{padding:'3rem 1rem'}}>
           {favorites &&
             favorites.map(odontologo => (
               <Card

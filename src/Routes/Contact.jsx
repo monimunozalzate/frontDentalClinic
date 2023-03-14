@@ -9,7 +9,7 @@ const Contact = () => {
   const { state } = useContext(ContextGlobal);
 
   return (
-    <div style={{padding:"2rem", backgroundColor:`${state.bgColor}`}}>
+    <div style={{padding:"3rem 2rem", backgroundColor:`${state.bgColor}`}}>
       <h2>Want to know more?</h2>
       <p>Send us your questions and we will contact you</p>
       <Form/>
